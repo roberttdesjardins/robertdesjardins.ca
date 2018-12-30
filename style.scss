@@ -1,0 +1,164 @@
+@import "node_modules/bootstrap/scss/_functions.scss";
+@import "node_modules/bootstrap/scss/_variables.scss";
+@import "node_modules/bootstrap/scss/mixins/_breakpoints.scss";
+
+/* VARIABLES */
+$top-nav-height: 20px;
+
+$color-0-0: #66789A;
+$color-0-1: #A7B0C2;
+$color-0-2: #8391AA;
+$color-0-3: #4C6189;
+$color-0-4: #314A76;
+
+$color-1-0: #E7D392;
+$color-1-1: #FFF6D7;
+$color-1-2: #FFF0BE;
+$color-1-3: #CEB668;
+$color-1-4: #B2973F;
+
+$color-2-0: #E7BD92;
+$color-2-1: #FFEBD7;
+$color-2-2: #FFDFBE;
+$color-2-3: #CE9C68;
+$color-2-4: #B2793F;
+
+/* GENERAL */
+
+a {
+  // TODO
+  text-decoration: none;
+  :link {
+
+  }
+  :visited {
+
+  }
+  :hover {
+
+  }
+  :active {
+
+  }
+}
+
+.container-fluid {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.large-font {
+  font-size: 400%;
+  padding: 20px;
+}
+
+.medium-font {
+  font-size: 200%;
+  padding: 10px;
+}
+
+.small-font {
+  font-size: 100%;
+  padding: 5px;
+}
+
+/* NAVBAR */
+.navbar {
+  min-height: $top-nav-height;
+}
+
+/* HOME */
+#home-name-container {
+  background-color: $color-0-1;
+  min-height: 100vh;
+  padding-top: 25vh;
+  p {
+    text-align: center;
+  }
+  .name-line {
+    stroke: $color-2-4;
+    stroke-width: 2px;
+  }
+}
+#home-about-container {
+  background-color: $color-1-1;
+}
+
+#home-skills-container {
+  background-color: $color-0-1;
+  text-align: center;
+  p {
+    text-align: right;
+    padding-right: 80px;
+  }
+}
+
+#home-interests-container {
+  background-color: $color-1-1;
+  text-align: center;
+  #carousel-interests {
+    max-width: 500px;
+    margin: auto;
+  }
+}
+
+#home-projects-container {
+  background-color: $color-0-1;
+  text-align: center;
+  img {
+    max-width:100%;
+    height:auto;
+  }
+  .project-container {
+    padding: 0 0 5px 0;
+    background-color: $color-1-1;
+  }
+}
+
+.home-resume-download {
+  background-color: $color-1-1;
+  div {
+    display: inline-block;
+  }
+
+}
+
+
+/* LOGO */
+.logo-small {
+  font-size: 50px;
+}
+
+.logo-large {
+  font-size: 200px;
+}
+
+// No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+@include media-breakpoint-up(sm) { 
+  .col {
+    background-color: green;
+  }
+}
+@include media-breakpoint-up(md) { 
+  .col {
+    background-color: yellow;
+  }
+}
+@include media-breakpoint-up(lg) {
+  .col {
+    background-color: orange;
+  }
+}
+@include media-breakpoint-up(xl) {
+  .col {
+    background-color: red;
+  }
+}
+
+// TODO:
+// Fill out colour palette variables
+// Add alt text for carousel
+// Add CSS for carousel
+// Change image sizes
+// Make navbar change current based on scroll position
+// Add AOS for elements
