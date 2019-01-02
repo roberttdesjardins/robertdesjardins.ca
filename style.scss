@@ -25,6 +25,10 @@ $color-2-4: #B2793F;
 
 /* GENERAL */
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   // TODO
   text-decoration: none;

@@ -1,0 +1,25 @@
+{
+  "name": "personal-website",
+  "version": "2.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.2.1",
+    "node-sass": "^4.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roberttdesjardins/robertdesjardins.ca-v2.git"
+  },
+  "author": "Robert Desjardins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roberttdesjardins/robertdesjardins.ca-v2/issues"
+  },
+  "homepage": "https://github.com/roberttdesjardins/robertdesjardins.ca-v2#readme"
+}
