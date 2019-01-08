@@ -6,7 +6,23 @@ html {
 
 a {
   text-decoration: none;
-  color: #ccc;
+  color: #123c69;
+}
+
+a:link {
+  color: #123c69;
+}
+
+a:visited {
+  color: #123c69;
+}
+
+a:hover {
+  color: #123c69;
+}
+
+a:active {
+  color: #123c69;
 }
 
 .container-fluid {
@@ -37,6 +53,12 @@ a {
 /* HOME */
 #home-name-container {
   background-color: #eee2dc;
+  background-image: url(images/laptop_background.jpg);
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 100vh;
   padding-top: 25vh;
 }
@@ -114,6 +136,11 @@ a {
 
 #home-contact-container .contact-info {
   padding-left: 6rem;
+  font-size: 18px;
+}
+
+#home-contact-container .contact-info p:first-child {
+  font-size: 32px;
 }
 
 .home-resume-download div {

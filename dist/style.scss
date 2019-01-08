@@ -20,18 +20,22 @@ html {
 a {
   // TODO
   text-decoration: none;
-  color: #ccc;
-  :link {
+  color: $color-text-2;
 
+  &:link {
+    color: $color-text-2;
   }
-  :visited {
 
+  &:visited {
+    color: $color-text-2;
   }
-  :hover {
 
+  &:hover {
+    color: $color-text-2;
   }
-  :active {
 
+  &:active {
+    color: $color-text-2;
   }
 }
 
@@ -64,19 +68,31 @@ a {
 /* HOME */
 #home-name-container {
   background-color: $color-background-1;
+  background-image: url(images/laptop_background.jpg);
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
   min-height: 100vh;
   padding-top: 25vh;
+
   p {
     text-align: center;
   }
+
   .name-line {
     stroke: $color-text-1;
     stroke-width: 2px;
   }
 }
+
 #home-about-container {
   background-color: $color-background-2;
   color: $color-text-2;
+
   i {
     color: $color-text-1;
   }
@@ -86,15 +102,18 @@ a {
   background-color: $color-background-1;
   color: $color-text-1;
   text-align: center;
+
   p {
     text-align: right;
     padding-right: 80px;
   }
+
   .skill:hover {
     font-size: 1.2rem;
     color: $color-text-2;
-    background-color: #bab2b5;
+    background-color: $color-background-2;
   }
+
   i {
     color: $color-text-2;
   }
@@ -104,6 +123,7 @@ a {
   background-color: $color-background-2;
   color: $color-text-2;
   text-align: center;
+
   #carousel-interests {
     max-width: 500px;
     margin: auto;
@@ -114,10 +134,12 @@ a {
   background-color: $color-background-1;
   color: $color-text-1;
   text-align: center;
+
   img {
-    max-width:100%;
-    height:auto;
+    max-width: 100%;
+    height: auto;
   }
+
   .project-container {
     padding: 0 0 5px 0;
     background-color: #ffffff;
@@ -127,13 +149,19 @@ a {
 #home-contact-container {
   background-color: $color-background-2;
   color: $color-text-2;
+
   .contact-info {
+    p:first-child {
+      font-size: 32px;
+    }
+
     padding-left: 6rem;
+    font-size: 18px;
   }
 }
 
 .home-resume-download {
-  
+
   div {
     display: inline-block;
   }
@@ -160,21 +188,24 @@ footer {
 }
 
 // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
-@include media-breakpoint-up(sm) { 
+@include media-breakpoint-up(sm) {
   .col {
     background-color: green;
   }
 }
-@include media-breakpoint-up(md) { 
+
+@include media-breakpoint-up(md) {
   .col {
     background-color: yellow;
   }
 }
+
 @include media-breakpoint-up(lg) {
   .col {
     background-color: orange;
   }
 }
+
 @include media-breakpoint-up(xl) {
   .col {
     background-color: red;
