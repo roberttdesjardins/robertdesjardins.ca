@@ -6,11 +6,11 @@ html {
 
 a {
   text-decoration: none;
+  color: #ccc;
 }
 
 .container-fluid {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px;
 }
 
 .large-font {
@@ -31,11 +31,12 @@ a {
 /* NAVBAR */
 .navbar {
   min-height: 20px;
+  background-color: #eee2dc;
 }
 
 /* HOME */
 #home-name-container {
-  background-color: #A7B0C2;
+  background-color: #eee2dc;
   min-height: 100vh;
   padding-top: 25vh;
 }
@@ -45,16 +46,22 @@ a {
 }
 
 #home-name-container .name-line {
-  stroke: #B2793F;
+  stroke: #ac3b61;
   stroke-width: 2px;
 }
 
 #home-about-container {
-  background-color: #FFF6D7;
+  background-color: #bab2b5;
+  color: #123c69;
+}
+
+#home-about-container i {
+  color: #ac3b61;
 }
 
 #home-skills-container {
-  background-color: #A7B0C2;
+  background-color: #eee2dc;
+  color: #ac3b61;
   text-align: center;
 }
 
@@ -65,11 +72,17 @@ a {
 
 #home-skills-container .skill:hover {
   font-size: 1.2rem;
-  color: #FFF6D7;
+  color: #123c69;
+  background-color: #bab2b5;
+}
+
+#home-skills-container i {
+  color: #123c69;
 }
 
 #home-interests-container {
-  background-color: #FFF6D7;
+  background-color: #bab2b5;
+  color: #123c69;
   text-align: center;
 }
 
@@ -79,7 +92,8 @@ a {
 }
 
 #home-projects-container {
-  background-color: #A7B0C2;
+  background-color: #eee2dc;
+  color: #ac3b61;
   text-align: center;
 }
 
@@ -90,11 +104,16 @@ a {
 
 #home-projects-container .project-container {
   padding: 0 0 5px 0;
-  background-color: #FFF6D7;
+  background-color: #ffffff;
 }
 
-.home-resume-download {
-  background-color: #FFF6D7;
+#home-contact-container {
+  background-color: #bab2b5;
+  color: #123c69;
+}
+
+#home-contact-container .contact-info {
+  padding-left: 6rem;
 }
 
 .home-resume-download div {
@@ -112,7 +131,8 @@ a {
 
 /* Footer */
 footer .footer-bottom {
-  background-color: #FFF6D7;
+  background-color: #bab2b5;
+  color: #123c69;
   padding: 1rem;
 }
 
