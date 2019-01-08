@@ -5,11 +5,12 @@
   "main": "index.js",
   "dependencies": {
     "bootstrap": "^4.2.1",
+    "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist",
     "scss": "node-sass --watch scss -o css"
   },
   "repository": {
@@ -18,8 +19,8 @@
   },
   "author": "Robert Desjardins",
   "license": "ISC",
+  "homepage": "https://roberttdesjardins.github.io/robertdesjardins.ca-v2",
   "bugs": {
     "url": "https://github.com/roberttdesjardins/robertdesjardins.ca-v2/issues"
-  },
-  "homepage": "https://github.com/roberttdesjardins/robertdesjardins.ca-v2#readme"
+  }
 }
