@@ -7,6 +7,7 @@ html {
 a {
   text-decoration: none;
 }
+
 .container-fluid {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -38,9 +39,11 @@ a {
   min-height: 100vh;
   padding-top: 25vh;
 }
+
 #home-name-container p {
   text-align: center;
 }
+
 #home-name-container .name-line {
   stroke: #B2793F;
   stroke-width: 2px;
@@ -54,15 +57,22 @@ a {
   background-color: #A7B0C2;
   text-align: center;
 }
+
 #home-skills-container p {
   text-align: right;
   padding-right: 80px;
+}
+
+#home-skills-container .skill:hover {
+  font-size: 1.2rem;
+  color: #FFF6D7;
 }
 
 #home-interests-container {
   background-color: #FFF6D7;
   text-align: center;
 }
+
 #home-interests-container #carousel-interests {
   max-width: 500px;
   margin: auto;
@@ -72,10 +82,12 @@ a {
   background-color: #A7B0C2;
   text-align: center;
 }
+
 #home-projects-container img {
   max-width: 100%;
   height: auto;
 }
+
 #home-projects-container .project-container {
   padding: 0 0 5px 0;
   background-color: #FFF6D7;
@@ -84,6 +96,7 @@ a {
 .home-resume-download {
   background-color: #FFF6D7;
 }
+
 .home-resume-download div {
   display: inline-block;
 }
@@ -97,25 +110,33 @@ a {
   font-size: 200px;
 }
 
+/* Footer */
+footer .footer-bottom {
+  background-color: #FFF6D7;
+  padding: 1rem;
+}
+
 @media (min-width: 576px) {
   .col {
     background-color: green;
   }
 }
+
 @media (min-width: 768px) {
   .col {
     background-color: yellow;
   }
 }
+
 @media (min-width: 992px) {
   .col {
     background-color: orange;
   }
 }
+
 @media (min-width: 1200px) {
   .col {
     background-color: red;
   }
 }
-
 /*# sourceMappingURL=style.css.map */

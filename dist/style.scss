@@ -95,6 +95,10 @@ a {
     text-align: right;
     padding-right: 80px;
   }
+  .skill:hover {
+    font-size: 1.2rem;
+    color: $color-1-1;
+  }
 }
 
 #home-interests-container {
@@ -135,6 +139,14 @@ a {
 
 .logo-large {
   font-size: 200px;
+}
+
+/* Footer */
+footer {
+  .footer-bottom {
+    background-color: $color-1-1;
+    padding: 1rem;
+  }
 }
 
 // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
