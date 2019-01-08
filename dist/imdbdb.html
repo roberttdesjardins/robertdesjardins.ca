@@ -1,0 +1,98 @@
+<!DOCTYPE hmtl>
+<html lang="en">
+    <head>
+        <title>TV IMDBDB</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="styleimdb.css">
+        <!-- Scrollbar Custom CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+        <!-- Font Awesome JS -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    </head>
+    <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+        <div class="wrapper">
+            <!-- Sidebar -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3 align="center">IMDBDB</h3>
+                </div>
+                <ul class="list-unstyled components">
+                    <li>
+                        Search for a TV show:
+                    </li>
+                    <li>
+                        <form id="find-show-form">
+                            <input type="text" placeholder="Name of TV Show" name="searchShow" style="width:200px; height:30px;" >
+                            <br>
+                            <br>
+                            <button>Search</button>
+                        </form>
+                    </li>
+                    <li>
+                        <div id="show-name-div" style="font-size:180%"></div>
+                        <div id="seasons-div"></div>
+                        <div id="show-rating-div"></div>
+                        <div id="show-years-div"></div>
+                        <input id="trendline-checkbox" class="d-inline" type="checkbox">
+                        <p class="d-inline">Trendline</p>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Page Content -->
+            <div id="content">
+                <nav class="navbar navbar-expand-lg navbar-light background1">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="index.html">RD</a>
+                            <button class="btn btn-dark d-inline-block d-lg-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-align-justify"></i>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="nav navbar-nav center-dropdown">
+                                <li><a class="nav-link" href="index.html#home">Home</a></li>
+                                <li><a class="nav-link" href="index.html#about">About</a></li>
+                                <li class="navbar-nav dropdown ">
+                                    <a class="nav-link" href="index.html#projects">Projects</a>
+                                    <button class="dropdown-toggle dropdown-toggle-split dropdown-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="imdbdb.html">IMDBDB</a>
+                                    </div>
+                                </li>
+                                <li> <a class="nav-link" href="index.html#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                        <button type="button" id="sidebarCollapse" class="btn btn-secondary ml-auto navbar-dark">
+                            <i class="navbar-toggler-icon"></i>
+                        </button>
+                    </div>
+                </nav>
+                <br>
+                <div class="chart-container">
+                    <canvas id="myChart"></canvas>
+                </div>
+                <footer class="fixed-bottom text-center">
+                    <p>IMDBDB by Robert Desjardins</p>
+                </footer>
+            </div>
+        </div>
+        <!-- Popper.JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+        <!-- jQuery Custom Scroller CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="requests.js"></script>
+        <script src="Chart.min.js"></script>
+        <script src="IMDB-functions.js"></script>
+        <script src="IMDB-app.js"></script>
+    </body>
+</html>
+

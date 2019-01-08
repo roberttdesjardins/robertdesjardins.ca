@@ -1,0 +1,469 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+    border: none;
+    z-index: 9999;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    border-radius: 0;
+    margin-bottom: 0px;
+    letter-spacing: 2px;
+}
+
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.navbar-nav > li{
+    padding-left:10px;
+    padding-right:10px;
+}
+
+
+
+.navbar .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #555;
+    margin: 40px 0;
+}
+
+
+li {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+input {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.chart-container {
+    position: relative;
+    margin: auto;
+    height: 80vh;
+    width: 80vw;
+}
+
+footer .fa {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.nav-sidebar {
+    float: right;
+    padding: 10px;
+}
+
+.intro-paragraph {
+    width: 60vw;
+    padding: 100px;
+    font-size: 1.4em;
+}
+
+.box_textshadow {
+    color: white;
+    text-shadow: 1px 1px 0px black; /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+}
+
+.jumbotron {
+    padding: 100px 25px;
+    border-radius: 0 !important;
+    height: 100%;
+    
+    /* The image used */
+    background-image: url(Images/laptop-desk-notebook-computer-mobile-work-697832-pxhere.com.jpg);
+    
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.sectional {
+    padding: 60px 50px;
+}
+
+
+.img-thumbnail {
+    padding: 0 0 15px 0;
+    /* border: none; */
+    /* border-radius: 10; */
+}
+
+.img-thumbnail img {
+    /* width: 100%;
+    height: 65%; */
+    margin-bottom: 10px;
+
+    max-width:100%;
+    width:auto;
+    height:auto;
+}
+
+
+
+.carousel-style {
+    max-width: 500px;
+    width:auto;
+    height:auto;
+    margin: auto;
+}
+
+/* div h5 {
+    text-align: right;
+    float: right;
+} */
+
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 999;
+    background: #eee2dc;
+    color: black;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    margin-right: -250px;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #eee2dc;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #eee2dc;
+}
+
+#sidebar ul p {
+    color: black;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+
+
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
+    content: '\e259';
+    display: block;
+    position: absolute;
+    left: 20px; /* changed */
+    font-family: 'Glyphicons Halflings';
+    font-size: 0.6em;
+}
+a[aria-expanded="true"]::before {
+    content: '\e260';
+}
+
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #6d7fcc;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+a.download {
+    background: #fff;
+    color: #555;
+}
+
+
+
+/* ---------------------------------------------------
+    ROW STYLE
+----------------------------------------------------- */
+ /* Remove the navbar's default margin-bottom and rounded borders */ 
+    /* .row.content {height: 450px} */
+
+    
+    @media screen and (max-width: 767px) {
+    .row.content {height:auto;} 
+    }
+
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+#content {
+    width: calc(100% - 250px);
+    padding: 0px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-bottom: 100px;
+}
+#content.active {
+    width: 100%;
+}
+
+
+/* ---------------------------------------------------
+    COLOR PALETTE
+----------------------------------------------------- */
+
+.background1 {
+    background-color: #eee2dc;
+}
+
+.background2 {
+    background-color: #bab2b5;
+}
+
+.text-style-main {
+    color: #ac3b61;
+    font-family: Montserrat, sans-serif;
+}
+
+.text-style-alt {
+    color:#123c69;
+    font-family: Montserrat, sans-serif;
+}
+
+.navbar-brand {
+    color: black !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #123c69 !important;
+}
+
+.navbar-nav li button:hover, .navbar-nav li.active button {
+    color: #fff !important;
+    background-color: #123c69 !important;
+}
+
+.dropdown-button {
+    background-color: transparent;
+    border: 0;
+    color: #999;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #7f032d;
+}
+
+.logo {
+    /* color: #123c69; */
+    font-size: 200px;
+}
+
+.logo-small {
+    /* color: #123c69; */
+    font-size: 50px;
+}
+
+.hover-skill:hover { /* Skill hover */
+    color: #123c69;
+    background-color: #bab2b5;
+    font-size: 1.2em;
+}
+
+/* ---------------------------------------------------
+    POMODORO ELEMENTS
+----------------------------------------------------- */
+/* .pomodoro div {
+    color: red
+} */
+
+.controls {
+    height: 30vh;
+}
+
+
+/* ---------------------------------------------------
+    SLIDE IN ELEMENTS
+----------------------------------------------------- */
+.slideanim {visibility:hidden;}
+.leftslideanim {visibility:hidden;}
+.rightslideanim {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    /* The duration of the animation */
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible;
+}
+.leftSlide {
+    /* The name of the animation */
+    animation-name: leftSlide;
+    -webkit-animation-name: leftSlide;
+    /* The duration of the animation */
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible;
+}
+.rightSlide {
+    /* The name of the animation */
+    animation-name: rightSlide;
+    -webkit-animation-name: rightSlide;
+    /* The duration of the animation */
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible;
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@keyframes leftSlide {
+    0% {
+        opacity: 0;
+        transform: translateX(-70%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+@-webkit-keyframes leftSlide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0%);
+    }
+}
+
+@keyframes rightSlide {
+    0% {
+        opacity: 0;
+        transform: translateX(70%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+@-webkit-keyframes rightSlide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0%);
+    }
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+@media (max-width: 768px) {
+    #sidebar {
+        margin-right: -250px;
+    }
+    #sidebar.active {
+        margin-right: 0;
+    }
+    #content {
+        width: 100%;
+    }
+    #content.active {
+        width: calc(100% - 250px);
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+    .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+    }
+    div h5 {
+        text-align: center;
+        /* float: center; */
+    }
+}
+
+@media(min-width: 768px) {
+    div h5 {
+        text-align: right;
+        float: right;
+    }
+}
