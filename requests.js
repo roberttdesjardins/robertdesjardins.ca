@@ -8,7 +8,7 @@ const getShow = async (showToFind) => {
 }
 
 const getSeason = async (showToFind, seasonChosen) => {
-    const response = await fetch(`http://www.omdbapi.com/?apikey=e9aeaf84&t=${showToFind}&Season=${seasonChosen}`)
+    const response = await fetch(`https://www.omdbapi.com/?apikey=e9aeaf84&t=${showToFind}&Season=${seasonChosen}`)
     if (response.status === 200) {
         return data = await response.json()
     } else {
