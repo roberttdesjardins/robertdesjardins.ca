@@ -1,0 +1,60 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf200
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red183\green111\blue179;\red23\green23\blue23;\red202\green202\blue202;
+\red212\green214\blue154;\red194\green126\blue101;\red140\green211\blue254;\red0\green0\blue0;\red202\green202\blue202;
+\red167\green197\blue152;\red0\green0\blue0;\red202\green202\blue202;\red202\green202\blue202;\red23\green23\blue23;
+\red140\green211\blue254;\red238\green46\blue56;\red167\green197\blue152;\red194\green126\blue101;\red70\green137\blue204;
+\red205\green173\blue106;\red202\green202\blue202;\red89\green138\blue67;\red212\green214\blue154;\red109\green109\blue109;
+}
+{\*\expandedcolortbl;;\cssrgb\c77255\c52549\c75294;\cssrgb\c11765\c11765\c11765;\cssrgb\c83137\c83137\c83137;
+\cssrgb\c86275\c86275\c66667;\cssrgb\c80784\c56863\c47059;\cssrgb\c61176\c86275\c99608;\cssrgb\c0\c1\c1;\cssrgb\c83229\c83229\c83125;
+\cssrgb\c70980\c80784\c65882;\cssrgb\c0\c1\c1;\cssrgb\c83229\c83229\c83125;\cssrgb\c83137\c83137\c83137;\cssrgb\c11765\c11765\c11765;
+\cssrgb\c61176\c86275\c99608;\cssrgb\c95686\c27843\c27843;\cssrgb\c70980\c80784\c65882;\cssrgb\c80784\c56863\c47059;\cssrgb\c33725\c61176\c83922;
+\cssrgb\c84314\c72941\c49020;\cssrgb\c83229\c83229\c83125;\cssrgb\c41569\c60000\c33333;\cssrgb\c86275\c86275\c66667;\cssrgb\c50196\c50196\c50196;
+}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Changes:\
+\
+Add font: 
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+@import\cf4  \cf5 url\cf4 (\cf6 'https://fonts.googleapis.com/css?family=Roboto+Condensed'\cf4 );\cb1 \
+
+\f0 \cf0 \kerning1\expnd0\expndtw0 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f1 \cf7 \cb3 \expnd0\expndtw0\kerning0
+font-family\cf4 : \cf6 'Roboto Condensed'\cf4 , \cf6 sans-serif\cf4 ;\cb1 \
+\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf8 Add box-shadow:\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf7 \cb3 box-shadow\cf4 : \cf10 30px\cf4  \cf10 0\cf4  \cf10 40px\cf4  \cf5 rgba\cf4 (\cf10 0\cf4 ,\cf10 0\cf4 ,\cf10 0\cf4 ,\cf10 0.1\cf4 ), \cf10 -30px\cf4  \cf10 0\cf4  \cf10 40px\cf4  \cf5 rgba\cf4 (\cf10 0\cf4 ,\cf10 0\cf4 ,\cf10 0\cf4 ,\cf10 0.1\cf4 );\cb1 \
+\
+\cf11 Add transition for colors:\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf13 \cb14 \outl0\strokewidth0 \strokec13   \cf15 \strokec15 transition\cf13 \strokec13 : \cf16 \strokec16 background\cf13 \strokec13  \cf17 \strokec17 500ms\cf13 \strokec13  \cf18 \strokec18 ease\cf13 \strokec13 ;\cb1 \
+\cb14   \cf19 \strokec19 &\cf20 \strokec20 :hover\cf13 \strokec13  \{\cb1 \
+\cb14     \cf15 \strokec15 background\cf13 \strokec13 : \cf18 \strokec18 #f4f4f4\cf13 \strokec13 ;\cb1 \
+\cb14   \}\cb1 \
+\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf11 \strokec21 Change smooth scroll to JQuery?\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf22 \cb14 \strokec22 // Animage Smooth Scroll\cf13 \cb1 \strokec13 \
+\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf23 \cb14 \strokec23 $\cf13 \strokec13 (\cf18 \strokec18 '#view-work'\cf13 \strokec13 ).\cf23 \strokec23 on\cf13 \strokec13 (\cf18 \strokec18 'click'\cf13 \strokec13 , \cf19 \strokec19 function\cf13 \strokec13  () \{\cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf13 \cb14   \cf19 \strokec19 const\cf13 \strokec13  \cf15 \strokec15 images\cf13 \strokec13  = \cf23 \strokec23 $\cf13 \strokec13 (\cf18 \strokec18 '#images'\cf13 \strokec13 ).\cf23 \strokec23 position\cf13 \strokec13 ().\cf15 \strokec15 top\cf13 \strokec13 ;\cb1 \
+\
+\cb14   \cf23 \strokec23 $\cf13 \strokec13 (\cf18 \strokec18 'html, body'\cf13 \strokec13 ).\cf23 \strokec23 animate\cf13 \strokec13 (\{\cb1 \
+\cb14     \cf15 \strokec15 scrollTop:\cf13 \strokec13  \cf15 \strokec15 images\cf13 \cb1 \strokec13 \
+\cb14   \}, \cf17 \strokec17 900\cf13 \strokec13 );\cb1 \
+\cb14 \})\cb1 \
+\
+\cb14   \cf24 \strokec24 <\cf19 \strokec19 script\cf13 \strokec13  \cf15 \strokec15 src\cf13 \strokec13 =\cf18 \strokec18 "http://code.jquery.com/jquery-3.3.1.min.js"\cf13 \strokec13  \cf15 \strokec15 integrity\cf13 \strokec13 =\cf18 \strokec18 "sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="\cf13 \cb1 \strokec13 \
+\cb14     \cf15 \strokec15 crossorigin\cf13 \strokec13 =\cf18 \strokec18 "anonymous"\cf24 \strokec24 ></\cf19 \strokec19 script\cf24 \strokec24 >\cf13 \cb1 \strokec13 \
+\cb14   \cf24 \strokec24 <\cf19 \strokec19 script\cf13 \strokec13  \cf15 \strokec15 src\cf13 \strokec13 =\cf18 \strokec18 "js/main.js"\cf24 \strokec24 ></\cf19 \strokec19 script\cf24 \strokec24 >\cf13 \cb1 \strokec13 \
+}

@@ -1,5 +1,5 @@
 const getShow = async (showToFind) => {
-    const response = await fetch(`http://www.omdbapi.com/?apikey=e9aeaf84&t=${showToFind}`)
+    const response = await fetch(`https://www.omdbapi.com/?apikey=e9aeaf84&t=${showToFind}`)
     if (response.status === 200) {
         return data = await response.json()
     } else {
