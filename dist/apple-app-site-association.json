@@ -1,0 +1,11 @@
+{
+  "applinks": {
+      "apps": [],
+      "details": [
+          {
+              "appID": "H2XMQZ2827org.reactjs.native.example.mentorv2",
+              "paths": [  "/auth/linkedin/callback" ]
+          }
+      ]
+  }
+}
